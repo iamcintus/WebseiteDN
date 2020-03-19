@@ -1,0 +1,13 @@
+ import web
+ pfade = ('/', 'hello' )
+ 
+ class hello:
+    def GET(self):
+       print "<html><head>"
+       print "<title>hello<title><head>"
+      print "<body><h1>Hello world!</h1>"
+     print "</body></html>"
+
+ web.internalerror = web.debugerror
+ if __name__ == '__main__':
+ web.run(pfade, web.reloader)
